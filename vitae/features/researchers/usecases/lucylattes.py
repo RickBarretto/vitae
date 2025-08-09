@@ -86,7 +86,7 @@ class ExportToLucy:
 
     def csv_of(self, researcher_id: LattesID, depth: int = 5) -> str:
         visited: set[str] = set()
-        group_name = dt.datetime.now(dt.UTC).strftime("%Y%m%d-%H%M")
+        group_name = dt.datetime.now(dt.UTC).strftime("Dia%Y%m%dAs%H%M")
 
         with self._researchers.session() as session:
 
